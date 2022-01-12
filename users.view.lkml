@@ -5,4 +5,11 @@ view: users {
     type: number
   }
   dimension: first_name {}
+  parameter: test_param_suggestions {
+    suggest_dimension: first_name
+  }
+
+  dimension: use_parameter {
+    sql: {% parameter test_param_suggestions %} ;;
+  }
 }
