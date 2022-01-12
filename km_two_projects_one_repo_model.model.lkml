@@ -1,4 +1,4 @@
-connection: "thelook_events_redshift"
+connection: "big_query_connection"
 
 include: "*.view.lkml"                       # include all views in this project
 
@@ -11,3 +11,4 @@ explore: users {
 #   view_label: "Pushed Changes In Dev - 1.6"
   view_label: "Pushed Changes In Dev - 1.7"
 }
+#from ford
